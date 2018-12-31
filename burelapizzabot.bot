@@ -1,0 +1,50 @@
+{
+  "name": "burelapizzabot",
+  "padlock": "/iFUReOGb2vHxuNABd3qPA==!FCcoF081Z3cXS02EoiYjDjxfHilvgS8GDM4MCegG0bUhJ0VPsxIRhkzGoHpKixUV",
+  "version": "2.0",
+  "services": [
+    {
+      "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+      "subscriptionId": "e7fdd024-a6f4-46a5-aa5f-80d0806f77dc",
+      "resourceGroup": "burelapizzabot-rg",
+      "serviceName": "burelapizzabot",
+      "type": "abs",
+      "name": "burelapizzabot",
+      "id": "1"
+    },
+    {
+      "connectionString": "CfHN5nvvTf70B5yXwUSDgg==!vsiHDAz2cDTgRf3iAqKoqTyfv7V8vBS4FfLOebzsjxqMJUK1JoEErlRc0X5OQAl9MLmMJKfYMqZtfbhqnzftM+4AXWcOOq3UvmOROrUcpSl80kP2SSQ1JXKbHqIZ6tZk7wUTfRowqcXbfu2FZ2uy77AO+KbBCTAW/KmMrnmN2d+XUnkFqGZcKYz/VobEJ2P4D14HGhKn5FikyX2hidAFE3hyQTLBIEcT/iDJKMa6YiU=",
+      "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+      "subscriptionId": "e7fdd024-a6f4-46a5-aa5f-80d0806f77dc",
+      "resourceGroup": "burelapizzabot-rg",
+      "serviceName": "burelapizzabotb2f0",
+      "type": "blob",
+      "id": "2"
+    },
+    {
+      "appId": "",
+      "appPassword": "",
+      "endpoint": "http://localhost:3978/api/messages",
+      "type": "endpoint",
+      "name": "development",
+      "id": "3"
+    },
+    {
+      "appId": "ebb7f4a5-12d0-4e6d-be85-05f36ee902bc",
+      "appPassword": "nxMNwvR6YfdWkm7xFEzCCw==!AR81iX4wbbkm2aNb1ehKfKfXiwIWI0c4bdtR3yBhHq4=",
+      "endpoint": "https://burelapizzabot.azurewebsites.net/api/messages",
+      "type": "endpoint",
+      "name": "production",
+      "id": "4"
+    },
+    {
+      "appId": "2c5709ff-6e75-45cf-a1eb-c557ba754ab0",
+      "authoringKey": "zGM7peQT1bWK8NIq743k6Q==!mf6CEIIDzlebb4hHaQRByfAs1LwcHiLZxOK10zJn6qO68SewbOjU775bsF9+azC5",
+      "version": "0.1",
+      "region": "australiaeast",
+      "type": "luis",
+      "name": "BasicBotLuisApplication",
+      "id": "5"
+    }
+  ]
+}
