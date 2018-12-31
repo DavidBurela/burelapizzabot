@@ -186,6 +186,11 @@ class Greeting extends ComponentDialog {
             { type: 'event' },
             { type: 'event', value: "my event args", other: "hii" },
             { type: 'custom' },
+            { type: 'ping' },
+            { type: 'MessageReaction' },
+            { type: 'Trace' },
+            { type: 'Invoke' },
+            { type: 'message', text: 'send money' },
             { type: 'message', text: 'Delayed typing' }
          ]);
         //  await step.context.sendActivities([
