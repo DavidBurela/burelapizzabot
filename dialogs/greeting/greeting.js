@@ -181,15 +181,20 @@ class Greeting extends ComponentDialog {
         await step.context.sendActivities([
             { type: 'typing' },
             { type: 'delay', value: 2000 },
+            { type: 'burelaEvent' },
+            { type: 'burelaEvent', value: "cool stuff" },
+            { type: 'event' },
+            { type: 'event', value: "my event args", other: "hii" },
+            { type: 'custom' },
             { type: 'message', text: 'Delayed typing' }
          ]);
-         await step.context.sendActivities([
-            { type: 'event' },
-            { type: 'event', value: 2000 },
-            { type: 'message', text: 'crypto message' }
-         ]);
+        //  await step.context.sendActivities([
+        //     { type: 'doge'},
+        //     { type: 'doge', value: 2000 },
+        //     { type: 'message', text: 'crypto message' }
+        //  ]);
         await step.context.sendActivity(`Hiii ${ userProfile.name }, from ${ userProfile.city }, nice to meet you!`);
-        await step.context.sendActivity(`You can always say 'My name is <your name> to reintroduce yourself to me.`);
+        //await step.context.sendActivity(`You can always say 'My name is <your name> to reintroduce yourself to me.`);
         return await step.endDialog();
     }
 }
