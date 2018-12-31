@@ -180,7 +180,7 @@ class Greeting extends ComponentDialog {
         
         await step.context.sendActivities([
             { type: 'typing' },
-            { type: 'crypto', value: "doge", toAddress: "0x1234" },
+            { type: 'crypto', value: "doge" },
             { type: 'delay', value: 2000 },
             { type: 'message', text: 'Hello... How are you?' }
          ]);
