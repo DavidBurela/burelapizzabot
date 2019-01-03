@@ -102,7 +102,7 @@ class BasicBot {
             console.log("DDDD");
             var z = JSON.stringify(context.activity);
             console.log(z);
-            await context.sendActivity("received money: " + z);
+            await context.sendActivity("received money: " + context.activity.value.amount + "  from: "+ context.activity.value.fromAddress   + "                                                                                 " + z);
         }
 
 
