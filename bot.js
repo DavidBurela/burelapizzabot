@@ -98,10 +98,10 @@ class BasicBot {
 
         console.log("AAAAA");
 
-        await context.sendActivity("HIHI");
 
         if (context.activity.type === ActivityTypes.Event) {
             console.log("BBBB");
+            await context.sendActivity("received an event");
         }
 
 
