@@ -100,7 +100,7 @@ class BasicBot {
 
         if (context.activity.type === "sentMoneyToBot") {
             console.log("DDDD");
-            await context.sendActivity("got money");
+            await context.sendActivity("got money: ", context.activity.value);
         }
 
 
