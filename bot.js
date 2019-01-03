@@ -95,7 +95,18 @@ class BasicBot {
         // Handle Message activity type, which is the main activity type for shown within a conversational interface
         // Message activities may contain text, speech, interactive cards, and binary or unknown attachments.
         // see https://aka.ms/about-bot-activity-message to learn more about the message and other activity types
+
+        console.log("AAAAA");
+
+        await context.sendActivity("HIHI");
+
+        if (context.activity.type === ActivityTypes.Event) {
+            console.log("BBBB");
+        }
+
+
         if (context.activity.type === ActivityTypes.Message) {
+            console.log("CCCC");
             let dialogResult;
             // Create a dialog context
             const dc = await this.dialogs.createContext(context);
@@ -139,7 +150,7 @@ class BasicBot {
                                 // to the user
                                 await dc.context.sendActivity(`I didn't understand what you just said to me.`);
                                 break;
-                            }
+                        }
                         break;
                     case DialogTurnStatus.waiting:
                         // The active dialog is waiting for a response from the user, so do nothing.
