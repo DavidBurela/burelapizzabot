@@ -100,18 +100,23 @@ class BasicBot {
 
         if (context.activity.type === "sentMoneyToBot") {
             console.log("DDDD");
-            await context.sendActivity("got money: ", context.activity.value.amount);
+            var z = JSON.stringify(context.activity);
+            console.log(z);
+            await context.sendActivity("received money: " + z);
         }
 
 
         if (context.activity.type === ActivityTypes.Event) {
             console.log("BBBB");
-            await context.sendActivity("received an event:", context.activity.value);
+            var z = JSON.stringify(context.activity);
+            console.log(z);
+            await context.sendActivity("received an event:", z);
         }
 
 
         if (context.activity.type === ActivityTypes.Message) {
             console.log("CCCC");
+
             let dialogResult;
             // Create a dialog context
             const dc = await this.dialogs.createContext(context);
