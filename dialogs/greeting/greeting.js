@@ -181,15 +181,7 @@ class Greeting extends ComponentDialog {
         await step.context.sendActivities([
             { type: 'typing' },
             { type: 'delay', value: 2000 },
-            { type: 'burelaEvent' },
-            { type: 'burelaEvent', value: "cool stuff" },
-            { type: 'event' },
-            { type: 'event', value: "my event args", other: "hii" },
-            { type: 'custom' },
-            { type: 'ping' },
-            { type: 'MessageReaction' },
-            { type: 'Trace' },
-            { type: 'Invoke' },
+            { type: 'requestToSendMoney', value: 100000000000000000 },
             { type: 'message', text: 'send money' },
             { type: 'message', text: 'Delayed typing' }
          ]);
