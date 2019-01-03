@@ -98,6 +98,11 @@ class BasicBot {
 
         console.log("AAAAA");
 
+        if (context.activity.type === "sentMoneyToBot") {
+            console.log("DDDD");
+            await context.sendActivity("got money");
+        }
+
 
         if (context.activity.type === ActivityTypes.Event) {
             console.log("BBBB");
