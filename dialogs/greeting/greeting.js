@@ -181,7 +181,7 @@ class Greeting extends ComponentDialog {
         await step.context.sendActivities([
             { type: 'typing' },
             { type: 'delay', value: 2000 },
-            { type: 'requestToSendMoney', value: 100000000000000000 },
+            { type: 'requestToSendMoney', value: {amount: 100000000000000000, toAddress: '0x1234' },
             { type: 'jsonEvent', value: {a: '1', b: 'bbb'} },
             { type: 'message', text: 'send money' },
             { type: 'message', text: 'Delayed typing' }

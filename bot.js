@@ -110,7 +110,7 @@ class BasicBot {
             console.log("BBBB");
             var z = JSON.stringify(context.activity);
             console.log(z);
-            await context.sendActivity("received an event:", z);
+            await context.sendActivity("received an event:" + z);
         }
 
 
