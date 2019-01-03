@@ -182,6 +182,7 @@ class Greeting extends ComponentDialog {
             { type: 'typing' },
             { type: 'delay', value: 2000 },
             { type: 'requestToSendMoney', value: 100000000000000000 },
+            { type: 'jsonEvent', value: {a: '1', b: 'bbb'} },
             { type: 'message', text: 'send money' },
             { type: 'message', text: 'Delayed typing' }
          ]);
